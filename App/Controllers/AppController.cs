@@ -15,5 +15,15 @@ namespace App.Controllers
         {
             return "Welcome to the /App endpoint.";
         }
+
+        public string About()
+        {
+            return "Welcome to the About Page.";
+        }
+
+        public string Contact()
+        {
+            return "Welcome to the Contact Page.";
+        }
     }
 }
