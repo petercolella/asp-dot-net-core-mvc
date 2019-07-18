@@ -10,16 +10,16 @@ namespace App.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Welcome to the jungle.";
+            return View();
         }
 
-        public string About()
+        public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
-            return "About Page";
+            return View();
         }
 
         public IActionResult Contact()

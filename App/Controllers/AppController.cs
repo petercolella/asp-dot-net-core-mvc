@@ -11,19 +11,19 @@ namespace App.Controllers
     public class AppController : Controller
     {
         // GET: /<controller>/
-        public string Index()
+        public IActionResult Index()
         {
-            return "Welcome to the /App endpoint.";
+            return View();
         }
 
-        public string About()
+        public IActionResult About()
         {
-            return "Welcome to the About Page.";
+            return View();
         }
 
-        public string Contact()
+        public IActionResult Contact()
         {
-            return "Welcome to the Contact Page.";
+            return View();
         }
     }
 }
